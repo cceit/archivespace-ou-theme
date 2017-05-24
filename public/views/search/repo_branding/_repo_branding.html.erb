@@ -1,0 +1,9 @@
+<% if @repository %>
+<div class="well sidebar-well">
+    <% if @repository.repo_code == 'AOIAL' %>
+        <%= render_aspace_partial :partial => "search/repo_branding/aoi" %>
+    <% elsif @repository.repo_code == 'CAC' %>
+        <%= render_aspace_partial :partial => "search/repo_branding/cac" %>
+    <% end %>
+</div>
+<% end %>

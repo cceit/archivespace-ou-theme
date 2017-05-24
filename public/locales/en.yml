@@ -1,0 +1,11 @@
+en:
+    brand:
+        title: ARC
+        home: Home
+        welcome_message: "Welcome to ARC: OU's Archival Discovery Portal"
+
+    org_info:
+        name: "ARC: Archival Research Collections"
+        addr1: 630 Parrington Oval, Room 101
+        addr2: Norman, OK 73019-4031
+        email: donotuse@ou.edu

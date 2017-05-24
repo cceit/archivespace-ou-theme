@@ -1,0 +1,184 @@
+<% set_title I18n.t("brand.home") %>
+
+<br/>
+
+<div class="well">
+  <div class="row-fluid">
+
+    <div class="span8">
+
+      <h3><%= I18n.t("brand.welcome_message") %></h3>
+      <p><%= I18n.t("brand.welcome_search_label") %></p>
+
+      <div class="tab-content">
+        <div id="simpleSearch" class="tab-pane active">
+          <%= render_aspace_partial :partial => "simple_search" %>
+        </div>
+        <div id="advancedSearch" class="tab-pane">
+          <%= render_aspace_partial :partial => "advanced_search" %>
+        </div>
+      </div>
+
+      <ul class="search-switcher">
+        <li class="active">
+          <a href="#simpleSearch" data-toggle="tab"><%= I18n.t("actions.hide_advanced_search") %></a>
+        </li>
+        <li>
+          <a href="#advancedSearch" data-toggle="tab"><%= I18n.t("actions.show_advanced_search") %></a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="span4">
+
+    </div>
+  </div>
+</div>
+<div class="well">
+  <div class="row-fluid">
+    <div class="col-sm-3">
+      <h3>DISCOVER</h3>
+      <p class="index-category">
+        The unique holdings of OU's Archival Research Collections (ARC) all in one unified database.
+      </p>
+      <p>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#discoverModal">
+          More Info
+        </button>
+      </p>
+    </div>
+    <div class="col-sm-3 col-sm-offset-1">
+      <h3>CONNECT</h3>
+      <p class="index-category">
+        Make instant connections between historic documents and materials that are house across OU's campus.
+      </p>
+      <p>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#connectModal">
+          More Info
+        </button>
+      </p>
+    </div>
+
+    <div class="col-sm-3 col-sm-offset-1">
+      <h3>JOIN</h3>
+      <p class="index-category">
+        Learn more about ARC and how your OU repository could benefit from membership.
+      </p>
+      <p>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#joinModal">
+          More Info
+        </button>
+      </p>
+    </div>
+  </div>
+  <div class="well">
+    <p class="col-sm-1 center-sm">
+      <img src="/assets/images/profile.png" alt="Jane Doe"/>
+    </p>
+    <p class="col-sm-6">
+      "Sed ac dictum massa. Aenean ligula justo, varius a purus ultrices, fermentum tempor nibh. Pellentesque id sapien
+      id mi luctus viverra id ac ligula. Mauris orci metus, efficitur eu urna at, gravida tempus sem. Ut facilisis mi
+      facilisis vestibulum consequat. Maecenas elementum et nunc nec ullamcorper." - Jane Doe, Director of History Stuff
+    </p>
+  </div>
+</div>
+
+<div id="discoverModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Discover</h4>
+      </div>
+      <div class="modal-body">
+        <div>
+          Archival research collections across the University of Oklahoma campus have come together to create a unified
+          portal for discovery of collection inventories.
+        </div>
+        <div style="padding: 10px 0;">
+          <img src="/assets/images/ou.png" alt="PLACEHOLDER" style="height: 100px; width: 100px">
+        </div>
+        <div>
+          Thanks to ARC, it’s now easier than ever to discover the diverse and historically significant collections 
+          housed at the University of Oklahoma. From House Speaker Carl Albert’s correspondence surrounding the 
+          Watergate scandal to glass slides used in theatre organ sing-alongs, the depths of these collections are just 
+          waiting to be discovered.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="connectModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Connect</h4>
+      </div>
+      <div class="modal-body">
+        <div>
+          The power of ARC lies in the instant connections researchers can make between collections across campus. 
+          Rather than visiting separate online databases and attempting to stitch them together, a researcher 
+          interested in the life of Liberace for example, could simple search for his name and find that relevant 
+          photographs exist at multiple repositories on campus.
+        </div>
+        <div>Search:</div>
+        <div>Browse & Filter:</div>
+        <div>Plan Your Visit</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="joinModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Join</h4>
+      </div>
+      <div class="modal-body">
+        <div>
+          <b>Benefits of ARC Consortium Membership:</b>
+          <ul>
+            <li>Cost and time savings as departments pool resources</li>
+            <li>Inter-departmental support to improve access to collections</li>
+            <li>Cross-discovery of collections materials which heretofore have been maintained in veritable information silos</li>
+            <li>Hosting and management of an open-source, standards-based, professionally supported database (ArchivesSpace) by CCE-IT</li>
+            <li>User-friendly, publicly accessible, online database for researchers</li>
+            <li>Data crawled by major search engines</li>
+            <li>Robust collections management interface</li>
+            <li>Standardized data export options</li>
+          </ul>
+        </div>
+        <div>
+          Interested in having the inventories of your OU repository included in ARC? Contact
+          <a href="mailto:baileys@ou.edu">baileys@ou.edu</a> or
+          <a href="mailto:nathangerth@ou.edu">nathangerth@ou.edu</a> for more information on joining the ARC Consortium.
+        </div>
+        <div>
+          <p>
+            <b>Founding Members</b><br>
+            <a href="http://www.ou.edu/content/aoi/resources/archives-and-library.html" target="_blank" class="plain">
+              <img src="/assets/images/aoi.png" alt="AOIAL" class="footer-icon" style="height: 100px; width: 100px" />
+            </a>
+            <a href="http://www.ou.edu/content/carlalbertcenter/congressional-collection.html" target="_blank" class="plain">
+              <img src="/assets/images/cac.png" alt="CAC" class="footer-icon" style="height: 100px; width: 100px" />
+            </a>
+          </p>
+
+          <p>
+            <b>Level 1 Members</b><br>
+            TBD
+          </p>
+
+          <p>
+            <b>Level 2 Members</b><br>
+            TBD
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
