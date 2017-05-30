@@ -71,15 +71,40 @@
       </p>
     </div>
   </div>
-  <div class="well">
-    <p class="col-sm-1 center-sm">
-      <img src="/assets/images/profile.png" alt="Jane Doe"/>
-    </p>
-    <p class="col-sm-6">
-      "Sed ac dictum massa. Aenean ligula justo, varius a purus ultrices, fermentum tempor nibh. Pellentesque id sapien
-      id mi luctus viverra id ac ligula. Mauris orci metus, efficitur eu urna at, gravida tempus sem. Ut facilisis mi
-      facilisis vestibulum consequat. Maecenas elementum et nunc nec ullamcorper." - Jane Doe, Director of History Stuff
-    </p>
+</div>
+
+<div class="well">
+  <div class="as-carousel">
+    <div class="carousel-container">
+      <p class="col-sm-3">
+        <img class="profile" src="/assets/images/samhuskey.png" alt="Sam Huskey" style/>
+      </p>
+      <p class="col-sm-8">
+        “Information doesn’t do any good if it isn’t openly and easily accessible. That is why intuitive, user-friendly
+        interfaces are essential for archival collections.”<br>
+        <b>
+          Dr. Samuel J. Huskey<br>
+          <i>Chair and Associate Professor</i><br>
+          Department of Classics and Letters
+        </b>
+      </p>
+    </div>
+    <div class="carousel-container">
+      <p class="col-sm-3">
+        <img class="profile" src="/assets/images/profile.png" alt="Jane Doe"/>
+      </p>
+      <p class="col-sm-8">
+        "Sed ac dictum massa. Aenean ligula justo, varius a purus ultrices, fermentum tempor nibh. Pellentesque id
+        sapien
+        id mi luctus viverra id ac ligula. Mauris orci metus, efficitur eu urna at, gravida tempus sem. Ut facilisis mi
+        facilisis vestibulum consequat. Maecenas elementum et nunc nec ullamcorper."<br>
+        <b>
+          Jane Doe<br>
+          <i>Director</i><br>
+          Placeholder Department
+        </b>
+      </p>
+    </div>
   </div>
 </div>
 
@@ -99,9 +124,9 @@
           <img src="/assets/images/ou.png" alt="PLACEHOLDER" style="height: 100px; width: 100px">
         </div>
         <div>
-          Thanks to ARC, it’s now easier than ever to discover the diverse and historically significant collections 
-          housed at the University of Oklahoma. From House Speaker Carl Albert’s correspondence surrounding the 
-          Watergate scandal to glass slides used in theatre organ sing-alongs, the depths of these collections are just 
+          Thanks to ARC, it’s now easier than ever to discover the diverse and historically significant collections
+          housed at the University of Oklahoma. From House Speaker Carl Albert’s correspondence surrounding the
+          Watergate scandal to glass slides used in theatre organ sing-alongs, the depths of these collections are just
           waiting to be discovered.
         </div>
       </div>
@@ -118,9 +143,9 @@
       </div>
       <div class="modal-body">
         <div>
-          The power of ARC lies in the instant connections researchers can make between collections across campus. 
-          Rather than visiting separate online databases and attempting to stitch them together, a researcher 
-          interested in the life of Liberace for example, could simple search for his name and find that relevant 
+          The power of ARC lies in the instant connections researchers can make between collections across campus.
+          Rather than visiting separate online databases and attempting to stitch them together, a researcher
+          interested in the life of Liberace for example, could simple search for his name and find that relevant
           photographs exist at multiple repositories on campus.
         </div>
         <div>Search:</div>
@@ -144,8 +169,12 @@
           <ul>
             <li>Cost and time savings as departments pool resources</li>
             <li>Inter-departmental support to improve access to collections</li>
-            <li>Cross-discovery of collections materials which heretofore have been maintained in veritable information silos</li>
-            <li>Hosting and management of an open-source, standards-based, professionally supported database (ArchivesSpace) by CCE-IT</li>
+            <li>Cross-discovery of collections materials which heretofore have been maintained in veritable information
+              silos
+            </li>
+            <li>Hosting and management of an open-source, standards-based, professionally supported database
+              (ArchivesSpace) by CCE-IT
+            </li>
             <li>User-friendly, publicly accessible, online database for researchers</li>
             <li>Data crawled by major search engines</li>
             <li>Robust collections management interface</li>
@@ -161,10 +190,10 @@
           <p>
             <b>Founding Members</b><br>
             <a href="http://www.ou.edu/content/aoi/resources/archives-and-library.html" target="_blank" class="plain">
-              <img src="/assets/images/aoi.png" alt="AOIAL" class="footer-icon" style="height: 100px; width: 100px" />
+              <img src="/assets/images/aoi.png" alt="AOIAL" class="footer-icon" style="height: 100px; width: 100px"/>
             </a>
             <a href="http://www.ou.edu/content/carlalbertcenter/congressional-collection.html" target="_blank" class="plain">
-              <img src="/assets/images/cac.png" alt="CAC" class="footer-icon" style="height: 100px; width: 100px" />
+              <img src="/assets/images/cac.png" alt="CAC" class="footer-icon" style="height: 100px; width: 100px"/>
             </a>
           </p>
 
@@ -182,3 +211,13 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript" charset="utf-8">
+    $('.as-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+</script>
