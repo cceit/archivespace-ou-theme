@@ -573,7 +573,7 @@ body {
         margin-left: 16.66666667%;
     }
     .col-sm-offset-1 {
-        margin-left: 8.33333333%;
+        margin-left: 5.33333333%;
     }
     .col-sm-offset-0 {
         margin-left: 0;
@@ -965,6 +965,13 @@ body {
 
 .profile {
     margin: 0 auto;
-    height: 200px;
-    width: 200px;
+    height: 200px !important;
+    width: 200px !important;
+}
+
+.quote {
+    font-size: 25px;
+    line-height: 1;
+    padding-top: 20px;
+    text-align: center;
 }
