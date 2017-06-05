@@ -970,8 +970,16 @@ body {
 }
 
 .quote {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1;
     padding-top: 20px;
     text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.quote-author {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
 }
