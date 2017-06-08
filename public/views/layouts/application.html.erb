@@ -74,7 +74,27 @@
   <%= render "site/footer" %>
 </footer>
 
+<%= render "site/modals" %>
 <%= javascript_include_tag "application" %>
-
+<!--Fix for old bootstrap modal bug-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($(window).width() >= 768) {
+            $('.modal').on('show.bs.modal', function (e) {
+                console.log(e.target);
+                $(e.target).css("width", "560px");
+            }).on('hidden.bs.modal', function (e) {
+                $(e.target).css("width", "0");
+            })
+        } else {
+            $('.modal').on('show.bs.modal', function (e) {
+                console.log(e.target);
+                $(e.target).css("width", "auto");
+            }).on('hidden.bs.modal', function (e) {
+                $(e.target).css("width", "0");
+            })
+        }
+    });
+</script>
 </body>
 </html>
