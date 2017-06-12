@@ -964,22 +964,32 @@ body {
 }
 
 .profile {
-    margin: 0 auto;
-    height: 200px !important;
-    width: 200px !important;
+    margin: 5px;
+    height: 80px !important;
+    width: 80px !important;
+    float:left;
+    vertical-align: middle;
 }
 
 .quote {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1;
-    padding-top: 20px;
-    text-align: center;
-    width: 75%;
-    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .quote {
+        margin-top: 50px !important;
+    }
+
+    .quote1 > .quote {
+        margin-top: 0 !important;
+    }
 }
 
 .quote-author {
     font-weight: bold;
-    text-align: center;
-    padding-top: 20px;
+    display: inline;
+    vertical-align: middle;
+    font-size: 12px;
+    padding-top: 10px;
 }
