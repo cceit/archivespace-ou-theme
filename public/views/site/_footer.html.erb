@@ -1,11 +1,11 @@
 <div class="container">
-  <ul class="col1 col-lg-3">
+  <div class="col1 col-lg-3">
     <address>
       <strong><%= I18n.t("org_info.name") %></strong><br>
       <%= I18n.t("org_info.addr1") %><br>
       <%= I18n.t("org_info.addr2") %>
     </address>
-  </ul>
+  </div>
   <div class="footer_nav">
     <ul class="col2">
       <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html">Accessibility</a>
@@ -20,22 +20,21 @@
       <li><a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html">Copyright</a>
       </li>
     </ul>
-    <ul class="col4">
-      <li style="text-align: center">
-        <a href="http://www.ou.edu/content/carlalbertcenter/congressional-collection.html" target="_blank" class="plain">
-          <img src="/assets/images/cac.png" alt="CAC" class="footer-icon"/>
-        </a>
-        <a href="http://www.ou.edu/content/aoi/resources/archives-and-library.html" target="_blank" class="plain">
-          <img src="/assets/images/aoi-circle.png" alt="AOIAL" class="footer-icon"/>
-        </a>
-      </li>
-    </ul>
   </div>
-
+  <div class="col4 col-lg-3">
+    <p style="text-align: center">
+      <a href="http://www.ou.edu/content/carlalbertcenter/congressional-collection.html" target="_blank" class="plain">
+        <img src="/assets/images/cac.png" alt="CAC" class="footer-icon"/>
+      </a>
+      <a href="http://www.ou.edu/content/aoi/resources/archives-and-library.html" target="_blank" class="plain">
+        <img src="/assets/images/aoi-circle.png" alt="AOIAL" class="footer-icon"/>
+      </a>
+    </p>
+  </div>
   <hr/>
-  <p class="updated">
-  <div class="site-info">
-    Developed by CCE<%= image_tag "/assets/images/tag.png", :alt => "CCE-IT" %>IT
+  <div class="updated">
+    <p class="site-info">
+      Developed by CCE<%= image_tag "/assets/images/tag.png", :alt => "CCE-IT" %>IT
+    </p>
   </div>
-  </p>
 </div>

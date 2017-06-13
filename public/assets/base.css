@@ -1,3 +1,33 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.site {
+    display: table;
+    height: 100%;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.site-footer {
+    display: table-row;
+    height: 1px;
+}
+
+@media (max-width: 768px) {
+    footer .col1,
+    .site-info {
+        margin-left: 20px;
+    }
+}
+
 .container-fluid {
     margin: 0 !important;
     padding: 0 !important;
@@ -146,24 +176,6 @@ footer {
     padding: 1rem;
 }
 
-footer {
-    height: 246px;
-}
-
-.push {
-    height: 123px;
-}
-
-@media (max-width: 768px) {
-    footer, .push {
-        height: inherit;
-    }
-
-    .center-sm {
-        text-align: center;
-    }
-}
-
 footer a:link,
 footer a:visited {
     color: #fff;
@@ -178,15 +190,13 @@ footer .container {
     padding: 0;
 }
 
-footer ul.col1,
-footer .footer_nav,
-footer .social_media {
+footer .col1,
+footer .footer_nav {
     margin-top: 25px;
     margin-bottom: 25px;
-    float: left;
 }
 
-footer ul.col1 {
+footer .col1 {
     background: transparent url(images/ou_footer.png) no-repeat 0px 0px;
     padding-left: 60px;
 }
@@ -1160,15 +1170,6 @@ body {
 
 .modal-body div:not(:last-child) {
     padding-bottom: 10px;
-}
-
-.slick-prev:before, .slick-next:before {
-    color: #333 !important;
-}
-
-.as-carousel {
-    width: 90%;
-    margin: 10px auto;
 }
 
 .profile {
