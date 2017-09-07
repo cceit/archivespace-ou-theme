@@ -28,9 +28,10 @@ resourceIds = requests.get(baseURL + '/repositories/' + repository + '/resources
 
 # Sets the location where the EAD XMLs should be saved
 eadxml_path = '/var/archivesspace/eadxml/'
-shutil.rmtree(eadxml_path)  # Deletes all old files (including folder)
+if os.path.exists(eadxml_path):
+    shutil.rmtree(eadxml_path)  # Deletes all old files (including folder)
 if not os.path.exists(eadxml_path):
-    os.mkdir(eadxml_path)  # Recreates folder (as shutil doesn't support globs)
+    os.mkdir(eadxml_path)
 
 # Exports EAD for all resources in repositories/2 where finding_aid_status = "published"
 for id in resourceIds.json():
@@ -48,6 +49,11 @@ for id in resourceIds.json():
 
 # Output path for compressed file (leave the extension off)
 output_path = '/var/archivesspace/plugins/ou_branding/frontend/assets/eadxml/eadxml'
+
+if os.path.exists(output_path):
+    shutil.rmtree(output_path)  # Deletes all old files (including folder)
+if not os.path.exists(output_path):
+    os.mkdir(output_path)
 
 # Directory to be zipped
 source_path = eadxml_path
