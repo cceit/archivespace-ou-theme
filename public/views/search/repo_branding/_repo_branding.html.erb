@@ -2,8 +2,14 @@
 <div class="well sidebar-well">
     <% if @repository.repo_code == 'AOIAL' %>
         <%= render_aspace_partial :partial => "search/repo_branding/aoi" %>
+    <% elsif @repository.repo_code == 'BRSCA' %>
+      <%= render_aspace_partial :partial => "search/repo_branding/brsca" %>
     <% elsif @repository.repo_code == 'CAC' %>
         <%= render_aspace_partial :partial => "search/repo_branding/cac" %>
+    <% elsif @repository.repo_code == 'NWC' %>
+      <%= render_aspace_partial :partial => "search/repo_branding/nwc" %>
+    <% elsif @repository.repo_code == 'PCC' %>
+      <%= render_aspace_partial :partial => "search/repo_branding/pcc" %>
     <% end %>
 </div>
 <% end %>
